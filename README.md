@@ -134,9 +134,9 @@ The sample does not use that package. Open `FaceRecognitionSDK.xcodeproj`.
 
 The code below shows how to use the license:
 
-https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/18591760a5af09a89d119f49f5d19dbd34b31f96/FaceRecognitionSDK/Home/ViewController.swift#L6-L8
+https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/0246a88826ec738edf81aebefb215718a96e104f/FaceRecognitionSDK/Home/ViewController.swift#L6-L8
 
-https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/18591760a5af09a89d119f49f5d19dbd34b31f96/FaceRecognitionSDK/Home/ViewController.swift#L243-L250
+https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/0246a88826ec738edf81aebefb215718a96e104f/FaceRecognitionSDK/Home/ViewController.swift#L243-L250
 
 Please [contact us](#-contact) to get a license for **your own app**.
 

@@ -147,9 +147,9 @@ onnxruntime.framework
 
 The code below shows how to use the license:
 
-[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L8-L10](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L8-L10)
+[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/21c3f892ba801b9cfe9b442feb3f60894f084de2/FaceRecognitionSDK/Home/ViewController.swift#L8-L10](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/21c3f892ba801b9cfe9b442feb3f60894f084de2/FaceRecognitionSDK/Home/ViewController.swift#L8-L10)
 
-[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L167-L191](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L167-L191)
+[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/21c3f892ba801b9cfe9b442feb3f60894f084de2/FaceRecognitionSDK/Home/ViewController.swift#L167-L191](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/21c3f892ba801b9cfe9b442feb3f60894f084de2/FaceRecognitionSDK/Home/ViewController.swift#L167-L191)
 
 Please [contact us](#-contact) to get a license for **your own app**.
 

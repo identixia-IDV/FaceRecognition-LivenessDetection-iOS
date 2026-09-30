@@ -29,17 +29,17 @@ let package = Package(
         ),
         .binaryTarget(
             name: "facerecognitionsdk",
-            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/download/v1.0.0/facerecognitionsdk.xcframework.zip",
+            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/latest/download/facerecognitionsdk.xcframework.zip",
             checksum: "0000000000000000000000000000000000000000000000000000000000000000"
         ),
         .binaryTarget(
             name: "FaceRecognitionEngine",
-            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/download/v1.0.0/FaceRecognitionEngine.xcframework.zip",
+            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/latest/download/FaceRecognitionEngine.xcframework.zip",
             checksum: "0000000000000000000000000000000000000000000000000000000000000000"
         ),
         .binaryTarget(
             name: "onnxruntime",
-            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/download/v1.0.0/onnxruntime.xcframework.zip",
+            url: "https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/releases/latest/download/onnxruntime.xcframework.zip",
             checksum: "0000000000000000000000000000000000000000000000000000000000000000"
         ),
     ]

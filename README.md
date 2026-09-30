@@ -26,14 +26,14 @@ Demo modes: **Enroll · Identify · Capture · Attribute**.
 
 ## <img src="https://api.iconify.design/lucide/clipboard-list.svg?color=%230F766E" width="24" height="24" alt="" /> Basics
 
-Read this once before cloning. Mobile demos ship a **bundled license** for the sample application / bundle id. Production apps need a new key from Identixia. [Initial commands](#-initial-commands) lists clone → run → activate. The sample Xcode project links the frameworks already beside it. Your app adds the Swift package at tag `v1.0.0`.
+Read this once before cloning. Mobile demos ship a **bundled license** for the sample application / bundle id. Production apps need a new key from Identixia. [Initial commands](#-initial-commands) lists clone → place runtime → run → activate options.
 
 | Topic | Basic information |
 | --- | --- |
 | **Product** | On-device **face recognition SDK** for iOS |
 | **Modes** | Enroll · Identify (1:N) · Capture · Attribute · optional passive liveness |
-| **Runtime** | Sample links the three frameworks beside `FaceRecognitionSDK.xcodeproj`. Your app adds the Swift package at tag `v1.0.0` |
-| **Demo id / license** | `com.identixia.facerecognitionsdk.app` — use the sample id with the bundled demo license |
+| **Runtime zip** | Three frameworks at repo root from Drive zip `PENDING` |
+| **Demo id / license** | `com.identixia.facerecognitionsdk` — use the sample id with the bundled demo license |
 | **Activate** | Sample app: keep the demo id and bundled key. Your app: new applicationId / bundle id → [contact](#-contact) → call the SDK activate API (see docs). |
 | **Tools** | **Xcode 15+** · physical **iPhone** |
 | **UI** | Four demo modes after Ready |
@@ -44,16 +44,22 @@ Read this once before cloning. Mobile demos ship a **bundled license** for the s
 
 ## <img src="https://api.iconify.design/lucide/terminal.svg?color=%230F766E" width="24" height="24" alt="" /> Initial commands
 
-Clone the sample and run it.
+Clone the sample, place the runtime, and run it.
 
-### <img src="https://img.shields.io/badge/-1-0F766E?style=for-the-badge" alt="" /> Clone
+### <img src="https://img.shields.io/badge/-1-0F766E?style=for-the-badge" alt="" /> Clone and place the runtime
 
 ```bash
 git clone https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS.git
 cd FaceRecognition-LivenessDetection-iOS
 ```
 
-Open `FaceRecognitionSDK.xcodeproj`. It links `facerecognitionsdk.framework`, `FaceRecognitionEngine.framework`, and `onnxruntime.framework` beside the project. A build downloads the `v1.0.0` GitHub Release only when a framework binary is missing.
+Download the runtime zip (`PENDING`) and place at repo root:
+
+```text
+facerecognitionsdk.framework
+FaceRecognitionEngine.framework
+onnxruntime.framework
+```
 
 ### <img src="https://img.shields.io/badge/-2-0F766E?style=for-the-badge" alt="" /> Run the demo
 
@@ -101,16 +107,22 @@ Wait until Home status = **Ready**, then use Camera / Gallery (or the face mode 
 | --- | --- |
 | Device | Physical **iPhone** |
 | Tools | **Xcode 15+** |
-| Demo bundle id | `com.identixia.facerecognitionsdk.app` |
+| Demo bundle id | `com.identixia.facerecognitionsdk` |
 | Frameworks | `facerecognitionsdk` · `FaceRecognitionEngine` · `onnxruntime` |
 
 ---
 
-## <img src="https://api.iconify.design/lucide/package.svg?color=%230F766E" width="24" height="24" alt="" /> Install
+## <img src="https://api.iconify.design/lucide/package.svg?color=%230F766E" width="24" height="24" alt="" /> Runtime zip
 
-Your app, in Xcode: File → Add Package Dependencies → `https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS` → tag `v1.0.0`.
+> **Google Drive (single zip):** `PENDING`
 
-The sample does not use that package. Open `FaceRecognitionSDK.xcodeproj`.
+Unzip to the repo root (siblings of the Xcode project):
+
+```text
+facerecognitionsdk.framework
+FaceRecognitionEngine.framework
+onnxruntime.framework
+```
 
 ---
 
@@ -118,9 +130,10 @@ The sample does not use that package. Open `FaceRecognitionSDK.xcodeproj`.
 
 ```text
 1. git clone https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS.git
-2. Open FaceRecognitionSDK.xcodeproj → set Signing Team
-3. Keep bundle id com.identixia.facerecognitionsdk.app for the demo license
-4. Run on a physical iPhone → Enroll / Identify / Capture / Attribute
+2. Place the three frameworks at the repo root
+3. Open FaceRecognitionSDK.xcodeproj → set Signing Team
+4. Keep bundle id com.identixia.facerecognitionsdk for the demo license
+5. Run on a physical iPhone → Enroll / Identify / Capture / Attribute
 ```
 
 ---
@@ -129,14 +142,14 @@ The sample does not use that package. Open `FaceRecognitionSDK.xcodeproj`.
 
 | | |
 | --- | --- |
-| Demo bundle id | `com.identixia.facerecognitionsdk.app` |
+| Demo bundle id | `com.identixia.facerecognitionsdk` |
 | Capabilities | Face recognition and/or passive face liveness |
 
 The code below shows how to use the license:
 
-https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/0246a88826ec738edf81aebefb215718a96e104f/FaceRecognitionSDK/Home/ViewController.swift#L6-L8
+[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L8-L10](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L8-L10)
 
-https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/0246a88826ec738edf81aebefb215718a96e104f/FaceRecognitionSDK/Home/ViewController.swift#L243-L250
+[https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L167-L191](https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS/blob/a83d7d82046d388e6d58c78579f0453d4b4d141a/FaceRecognitionSDK/Home/ViewController.swift#L167-L191)
 
 Please [contact us](#-contact) to get a license for **your own app**.
 
@@ -144,7 +157,7 @@ Please [contact us](#-contact) to get a license for **your own app**.
 
 ## <img src="https://api.iconify.design/lucide/puzzle.svg?color=%230F766E" width="24" height="24" alt="" /> Use in your app
 
-Add the Swift package at tag `v1.0.0`, activate → init, then detect / template / match (and liveness when licensed). Do not ship a production key against the demo bundle id. See [docs](https://docs.identixia.com).
+Link the three frameworks, activate → init, then detect / template / match (and liveness when licensed). Do not ship a production key against the demo bundle id. See [docs](https://docs.identixia.com).
 
 ---
 

@@ -28,7 +28,7 @@ final class AboutViewController: UIViewController {
 
 
         let product = UILabel()
-        product.text = "Face Recognition SDK"
+        product.text = "Face Recognition & Liveness SDK"
         product.textColor = IXColor.accent
         product.font = .systemFont(ofSize: 15)
         product.textAlignment = .center
@@ -47,7 +47,7 @@ final class AboutViewController: UIViewController {
             "Identixia builds on-device identity technology — face recognition, liveness, and document reading — so biometric data never has to leave the phone."
         )
         let productBody = cardLabel(
-            "This app demos the Face Recognition SDK for iOS: enroll, identify, capture, and attribute analysis. Everything runs fully on-premise."
+            "This app demos Face Recognition & Liveness for iOS: enroll, identify, capture, attribute analysis, and liveness. Everything runs fully on-premise."
         )
 
 

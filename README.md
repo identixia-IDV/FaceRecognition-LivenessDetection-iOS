@@ -33,7 +33,7 @@ Read this once before cloning. Mobile demos ship a **bundled license** for the s
 | **Product** | On-device **face recognition SDK** for iOS |
 | **Modes** | Enroll · Identify (1:N) · Capture · Attribute · optional passive liveness |
 | **Runtime zip** | Three frameworks at repo root from Drive zip `PENDING` |
-| **Demo id / license** | `com.identixia.facerecognitionsdk` — use the sample id with the bundled demo license |
+| **Demo id / license** | `com.identixia.facerecognitionsdk.app` — use the sample id with the bundled demo license |
 | **Activate** | Sample app: keep the demo id and bundled key. Your app: new applicationId / bundle id → [contact](#-contact) → call the SDK activate API (see docs). |
 | **Tools** | **Xcode 15+** · physical **iPhone** |
 | **UI** | Four demo modes after Ready |
@@ -107,7 +107,7 @@ Wait until Home status = **Ready**, then use Camera / Gallery (or the face mode 
 | --- | --- |
 | Device | Physical **iPhone** |
 | Tools | **Xcode 15+** |
-| Demo bundle id | `com.identixia.facerecognitionsdk` |
+| Demo bundle id | `com.identixia.facerecognitionsdk.app` |
 | Frameworks | `facerecognitionsdk` · `FaceRecognitionEngine` · `onnxruntime` |
 
 ---
@@ -132,7 +132,7 @@ onnxruntime.framework
 1. git clone https://github.com/identixia-IDV/FaceRecognition-LivenessDetection-iOS.git
 2. Place the three frameworks at the repo root
 3. Open FaceRecognitionSDK.xcodeproj → set Signing Team
-4. Keep bundle id com.identixia.facerecognitionsdk for the demo license
+4. Keep bundle id com.identixia.facerecognitionsdk.app for the demo license
 5. Run on a physical iPhone → Enroll / Identify / Capture / Attribute
 ```
 
@@ -142,7 +142,7 @@ onnxruntime.framework
 
 | | |
 | --- | --- |
-| Demo bundle id | `com.identixia.facerecognitionsdk` |
+| Demo bundle id | `com.identixia.facerecognitionsdk.app` |
 | Capabilities | Face recognition and/or passive face liveness |
 
 The code below shows how to use the license:
